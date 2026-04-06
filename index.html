@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mudasir Ahmed Fragrance</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+  <style>
+    /* NAVBAR */
+    .navbar-dark .nav-link {
+      color: white;
+      transition: 0.3s;
+    }
+
+    .navbar-dark .nav-link:hover {
+      color: gold;
+    }
+
+    .navbar img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    /* CAROUSEL */
+    .carousel-item img {
+      height: 500px;
+      object-fit: cover;
+    }
+
+    @media(max-width:100%) {
+      .carousel-item img {
+        height: 200px;
+      }
+    }
+
+    /* SEARCH BUTTON */
+    .btn-outline-primary {
+      border-color: gold;
+      color: gold;
+    }
+
+    .btn-outline-primary:hover {
+      background: gold;
+      color: black;
+    }
+
+    /* PRODUCT BUTTON */
+    .btn-warning {
+      background: gold;
+      border: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    .btn-warning:hover {
+      background: black;
+      color: gold;
+    }
+
+    /* SOCIAL BUTTONS */
+    .social-buttons a {
+      margin: 5px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+
+      <img src="image 1.jpg">
+
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nav">
+
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link active">HOME</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="fragrance.html">FRAGRANCE</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">ACTION</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item">Mens</a></li>
+              <li><a class="dropdown-item">Women</a></li>
+              <li>
+                <hr>
+              </li>
+              <li><a class="dropdown-item">Top Sellers</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">CONTACT US</a>
+          </li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-3">
+
+          <!-- SEARCH -->
+          <input class="form-control" placeholder="Search" style="width:200px;">
+          <button class="btn btn-outline-primary">Search</button>
+
+          <!-- LOGIN -->
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#Loginmodal">
+            Login
+          </button>
+
+          <!-- SIGNUP -->
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#Signupmodal">
+            Sign Up
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+    </div>
+    </div>
+  </nav>
+
+  <!-- LOGIN SIGNUP BUTTONS -->
+  <!-- LOGIN MODAL -->
+  <div class="modal fade" id="Loginmodal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title">Login to M A Fragrance</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label>Email</label>
+              <input type="email" class="form-control">
+            </div>
+
+            <div class="mb-3">
+              <label>Password</label>
+              <input type="password" class="form-control">
+            </div>
+
+            <button type="button" class="btn btn-outline-primary w-100 text-black border-dark">Login</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- SIGNUP MODAL -->
+  <div class="modal fade" id="Signupmodal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title">Get an M A fragrance Account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label>Email</label>
+              <input type="text" class="form-control">
+            </div>
+
+            <div class="mb-3">
+              <label>Password</label>
+              <input type="email" class="form-control">
+            </div>
+
+            <div class="mb-3">
+              <label>Confirm Password</label>
+              <input type="password" class="form-control">
+            </div>
+
+            <button type="button" class="btn btn-outline-primary w-100 text-black border-dark">Sign Up</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- CAROUSEL -->
+  <div class="container mt-4">
+    <div id="carouselExample" class="carousel slide carousel-fade mx-auto" style="max-width:50%;"
+      data-bs-ride="carousel">
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="images 2.png" class="d-block w-100">
+          <div class="text-center mt-2 text-white">
+            <h4>Welcome to M A Fragrance</h4>
+            <p>Best perfumes collection</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="images 3.png" class="d-block w-100">
+          <div class="text-center mt-2 text-white">
+            <h4>Luxury Fragrance</h4>
+            <p>Feel the premium quality</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="images 4.png" class="d-block w-100">
+          <div class="text-center mt-2 text-white">
+            <h4>Top Selling Perfumes</h4>
+            <p>Most محبوب fragrances</p>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+    <!-- BRAND NAME -->
+    <div class="text-center mt-3">
+      <h2 style="font-weight:bold;">M A Fragrance</h2>
+      <p style="color:gray;">Best Premium Perfumes Collection</p>
+    </div>
+    <!-- SOCIAL BUTTONS (👇 YAHAN HAIN) -->
+    <div class="social-buttons text-center mt-3">
+      <a href="https://www.instagram.com/mudasar78600" target="_blank" class="btn btn-danger">Instagram</a>
+      <a href="https://tiktok.com/@mudasarahmed3" target="_blank" class="btn btn-dark">TikTok</a>
+      <a href="https://www.facebook.com/share/1AscQbqruG/" target="_blank" class="btn btn-primary">Facebook</a>
+    </div>
+
+  </div>
+
+  <!-- PRODUCTS -->
+  <div class="container my-5">
+    <div class="row">
+
+      <div class="col-md-6">
+        <div class="row g-0 border rounded shadow-sm mb-4 align-items-center">
+
+          <div class="col p-4">
+            <h3>Featured Perfume</h3>
+            <p>Premium long-lasting fragrance for men. 24-hour strong scent.</p>
+            <h5 style="color:green;">Rs. 2,499</h5>
+            <button class="btn btn-warning" onclick="addToCart()">
+              Add to Cart
+            </button>
+          </div>
+
+          <div class="col-auto">
+            <img src="thumb-1.png" width="200" height="250" class="img-fluid">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="row g-0 border rounded shadow-sm mb-4 align-items-center">
+
+          <div class="col p-4">
+            <h3>Luxury Collection</h3>
+            <p>Elegant premium perfumes for daily use long-lasting fragrance.</p>
+            <h5 style="color:green;">Rs. 3,199</h5>
+            <button class="btn btn-warning" onclick="addToCart()">
+              Add to Cart
+          </div>
+
+          <div class="col-auto">
+            <img src="thumb-2.png" width="200" height="250" class="img-fluid">
+          </div>
+
+
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded shadow-sm mb-4 align-items-center">
+
+          <div class="col p-4">
+            <h3>M A Best Perfume</h3>
+            <p>Premium long-lasting fragrance for men. 24-hour strong scent.</p>
+            <h5 style="color:green;">Rs. 3,499</h5>
+            <button class="btn btn-warning" onclick="addToCart()">
+  Add to Cart
+</button>
+          </div>
+
+          <div class="col-auto">
+            <img src="thumb-3.png" width="200" height="250" class="img-fluid">
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded shadow-sm mb-4 align-items-center">
+
+          <div class="col p-4">
+            <h3>M A Best Perfume</h3>
+            <p>Elegant premium perfumes for daily use long-lasting fragrance.</p>
+            <h5 style="color:green;">Rs. 3,999</h5>
+           <button class="btn btn-warning" onclick="addToCart()">
+  Add to Cart
+</button>
+          </div>
+
+          <div class="col-auto">
+            <img src="thumb-4.png" width="200" height="250" class="img-fluid">
+          </div>
+
+        </div>
+      </div>
+      <footer class="container mt-5 d-flex justify-content-between align-items-center">
+
+        <p class="mb-0">
+          © 2024–2026 Company, Inc. ·
+          <a href="#">Privacy</a> ·
+          <a href="#">Terms</a>
+        </p>
+
+        <p class="mb-0">
+          <a href="#">Back to top</a>
+        </p>
+
+      </footer>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+      <script>
+        function addToCart() {
+          alert("Product added to cart 🛒");
+        }
+      </script>
+</body>
+
+</html>
